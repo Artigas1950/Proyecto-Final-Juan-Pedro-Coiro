@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkkhaki;
+}
+
+.navBar img{
+    width: 10em;
+    margin: 4em;
+}
+
+.navBar h1{
+    color:firebrick;
+}
+
+.resultados{
+    background-color: khaki;
+}
+
+.resultados h3{
+    color: firebrick;
+}
+
+.formulario {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+}
+
+.boton-tirar-dados {
+    margin-top: 1em;
+    padding: 6px;
+}
+
+.resultados-dados {
+    margin-top: 2rem;
+}
