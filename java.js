@@ -81,14 +81,12 @@ btnTirarDados.addEventListener('click', (event) => {
             // 4 Dados
             listaDados.innerHTML = `Resultados: ${dado.azar()}, ${dado.azar()}, ${dado.azar()}, ${dado.azar()}`;
         }
-        Swal.fire({
-            title: 'Dados tirados exitosamente',
-            icon: 'success',
-            showConfirmButton: false,
-            timer : 2000
-          })
-        
-        
+        // Fetch al tirar dado
+        fetch('https://randomuser.me/api/')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.results)
+        })
         
     } 
 });
