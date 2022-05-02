@@ -87,7 +87,7 @@ btnTirarDados.addEventListener('click', (event) => {
         .then(data => {
             console.log(data.results)
         })
-        
+        // Aqui iría sweet alert pero no me encuentra el CDN
     } 
 });
 
