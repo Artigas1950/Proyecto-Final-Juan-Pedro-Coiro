@@ -81,13 +81,19 @@ btnTirarDados.addEventListener('click', (event) => {
             // 4 Dados
             listaDados.innerHTML = `Resultados: ${dado.azar()}, ${dado.azar()}, ${dado.azar()}, ${dado.azar()}`;
         }
-        // Fetch al tirar dado
+        // Fetch al tirar dado, hace log de un usuario al azar.
         fetch('https://randomuser.me/api/')
         .then(res => res.json())
         .then(data => {
             console.log(data.results)
         })
-        // Aqui iría sweet alert pero no me encuentra el CDN
+        // Alert con sweetAlert2 al tirar dado exitosamente
+        Swal.fire({
+            title: 'DONE',
+            icon: 'success',
+            timer: 2000
+        })
     } 
 });
+
 
